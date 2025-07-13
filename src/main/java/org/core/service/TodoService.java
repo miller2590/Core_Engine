@@ -7,14 +7,13 @@ import java.util.ArrayList;
 
 @Service
 public class TodoService {
-    // Fields (props/attrs)
+
     private final List<Todo> todos;
 
-    // Constructor
     public TodoService() {
         this.todos = new ArrayList<>();
     }
-    // - addTodo(String title, String text)
+
     public void addTodo(String title, String text) {
         Todo newTodo = new Todo(title, text);
         todos.add(newTodo);
